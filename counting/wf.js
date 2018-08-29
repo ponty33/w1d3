@@ -7,6 +7,7 @@ var countLetters = function (input) {
   function assignLetter(obj, key) {
     typeof obj[key] === 'undefined' ? obj[key] = 1 : obj[key] ++;
   }
+  delete total[" "];
   return total;
 }
 
