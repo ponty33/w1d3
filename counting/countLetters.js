@@ -4,7 +4,7 @@ var countLetters = function (input) {
   for (i = 0; i < letters.length; i++) {
       assignLetter(total, letters[i]);
   }
-  function assignLetter(obj, key) {
+  var assignLetter = function(obj, key) {
     typeof obj[key] === 'undefined' ? obj[key] = 1 : obj[key] ++;
   }
   return total;
